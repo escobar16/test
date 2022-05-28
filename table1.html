@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>table</title>
+	<style type="text/css">
+		table{
+			border: 20px double grey;
+			width: 700px;
+			background-image: url(https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?size=626&ext=jpg&ga=GA1.2.1908636980.1633737600);
+			border-collapse: separate;
+			border-spacing: 10px;
+
+		}
+		th,td{
+			border: 5px solid grey;
+			width: 150px;
+			height: 1cm;
+		}
+		tr:hover{
+			background-color: pink;
+		}
+		tr:nth-child(even){
+			background-color: magenta;
+		}
+		caption{
+			caption-side: bottom;
+			text-align: right;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+<p style="background-color: yellow; color: green; font-size: 50px;">Ми вивчаємо таблиці</p>
+<table>
+	<caption>HTML colors</caption>
+	<thead>
+		<tr><th>Color</th><th>Name</th><th>HEX code</th><th>RGB code</th></tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="background-color: #000;"></td>
+			<td>Black</td>
+			<td>#000000</td>
+			<td>(0,0,0)</td>
+		</tr>
+		<tr><td style="background-color: #f00;"></td><td>Red</td><td>#ff0000</td><td>(255,0,0)</td></tr>
+		<tr><td style="background-color: #ffa500;"></td><td>Orange</td><td>#ffa500</td><td>(255,165,0)</td></tr>
+		<tr><td style="background-color: #ffff00;"></td><td>Yellow</td><td>#ffff00</td><td>(255,255,0)</td></tr>
+		<tr><td style="background-color: #0f0;"></td><td>Green</td><td>#00ff00</td><td>(0,255,0)</td></tr>
+		<tr><td style="background-color: #00f;"></td><td>Blue</td><td>#0000ff</td><td>(0,0,255)</td></tr>
+		<tr><td style="background-color: #4b0082;"></td><td>Indigo</td><td>#4b0082</td><td>(75,0,130)</td></tr>
+		<tr><td style="background-color: #ee82ee;"></td><td>Violet</td><td>#ee82ee</td><td>(238,130,238)</td></tr>
+		<tr><td style="background-color: #fff;"></td><td>White</td><td>#ffffff</td><td>(255,255,255)</td></tr>
+		<tr><td style="background-color: #f00;"></td><td>Red</td><td>#ff0000</td><td>(255,0,0)</td></tr>
+		<tr><td style="background-color: #ffa500;"></td><td>Orange</td><td>#ffa500</td><td>(255,165,0)</td></tr>
+		<tr><td style="background-color: #ffff00;"></td><td>Yellow</td><td>#ffff00</td><td>(255,255,0)</td></tr>
+		<tr><td style="background-color: #0f0;"></td><td>Green</td><td>#00ff00</td><td>(0,255,0)</td></tr>
+		<tr><td style="background-color: #00f;"></td><td>Blue</td><td>#0000ff</td><td>(0,0,255)</td></tr>
+		<tr><td style="background-color: #4b0082;"></td><td>Indigo</td><td>#4b0082</td><td>(75,0,130)</td></tr>
+		<tr><td style="background-color: #ee82ee;"></td><td>Violet</td><td>#ee82ee</td><td>(238,130,238)</td></tr>
+		<tr><td style="background-color: #fff;"></td><td>White</td><td>#ffffff</td><td>(255,255,255)</td></tr>
+	</tbody>
+</table>
+
+</body>
+</html>

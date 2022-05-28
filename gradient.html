@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>gradient</title>
+	<style>
+		div{
+			width: 200px; 
+			height: 200px; 
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+    <div style="background: linear-gradient(blue, pink);"></div>
+    <div style="background: linear-gradient(blue 50%, pink 50%);"></div>
+    <div style="background: linear-gradient(to right, blue, pink);"></div>
+    <div style="background: linear-gradient(to bottom right, blue, pink);"></div>
+    <div style="background: linear-gradient(135deg, blue, pink);"></div>
+    <div style="background: linear-gradient(black,blue, pink, red);"></div>
+    <div style="background: linear-gradient(215deg, rgba(255,0,0, 0.8), rgba(255,0,0,0) 70%),
+      linear-gradient(125deg, rgba(0,255,0, 0.8), rgba(0,255,0,0) 70%),
+      linear-gradient(330deg, rgba(0,0,255, 0.8), rgba(0,0,255,0) 70%);"><p style="font-size: 24px; color: white; padding: 10px; text-align: center;">Тут у нас накладено три градієнти</p></div>
+      <div style="background: linear-gradient(215deg, rgba(255,0,0, 0.8), rgba(255,0,0,0) 33%),
+      linear-gradient(125deg, rgba(0,255,0, 0.8), rgba(0,255,0,0) 33%),
+      linear-gradient(330deg, rgba(0,0,255, 0.8), rgba(0,0,255,0) 33%);"></div>
+
+    <div style="background: radial-gradient(blue, pink);"></div>
+    <div style="background: radial-gradient(blue 50%, pink 50%);"></div>
+    <div style="width: 300px; background: radial-gradient(blue, pink);"></div>
+    <div style="background: radial-gradient(black, blue, pink, red);"></div>
+    <div style="background: radial-gradient(at 0% 30%, blue, pink, red);"></div>
+    <div style="background: radial-gradient(at 20% 180%, blue, pink, red);"></div>
+
+    <div style="background: conic-gradient(blue, pink);"></div>
+    <div style="background: conic-gradient(blue, pink); border-radius: 50%;"></div>
+    <div style="background: conic-gradient(at 30% 30%, black, blue, pink, red);"></div>
+    <div style="background: conic-gradient(from 180deg, black, blue, pink, red);"></div>
+    <div style="background: conic-gradient(from 270deg, black, blue, pink, red);"></div>
+
+    <div style="background: repeating-linear-gradient(45deg, blue, pink 10px);"></div>
+    <div style="background: repeating-radial-gradient(blue, pink 10px);"></div>
+</body>
+</html>
