@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Canvas</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1000" height="1000" style="border:1px solid #d3d3d3;">
+</canvas>
+<script>
+// Nice Man
+
+let canvas = document.getElementById("myCanvas");
+let cxt = canvas.getContext("2d");
+
+// Head
+
+cxt.beginPath();
+cxt.arc(100, 100, 50, 0, Math.PI*2, false);
+cxt.closePath();
+cxt.fillStyle="#222830";
+cxt.fill();
+
+// Left eye
+
+cxt.beginPath();
+cxt.arc(85, 85, 15, 0, Math.PI*2, false);
+cxt.closePath();
+cxt.fillStyle = "#ecbd8b";
+cxt.fill();
+
+// Right eye
+
+cxt.beginPath();
+cxt.arc(125, 85, 15, 0, Math.PI*2, false);
+cxt.closePath();
+cxt.fillStyle = "#ecbd8b";
+cxt.fill();
+
+// Nose
+
+cxt.beginPath();
+cxt.arc(105, 105, 5, 0, Math.PI*2, false);
+cxt.closePath();
+cxt.fillStyle = "#ecbd8b";
+cxt.fill();
+
+// Mouth
+
+cxt.beginPath();
+cxt.ellipse(100, 115, 25, 20, Math.PI * 2.10, 0, Math.PI);
+cxt.closePath()
+cxt.fillStyle = '#ecbd8b';
+cxt.fill();
+
+// Left Pupil
+
+cxt.beginPath();
+cxt.arc(85, 85, 5, 0, Math.PI*2, false);
+cxt.closePath();
+cxt.fillStyle="#222830";
+cxt.fill();
+
+// Right Pupil
+
+cxt.beginPath();
+cxt.arc(125, 85, 5, 0, Math.PI*2, false);
+cxt.closePath();
+cxt.fillStyle = "#222830";
+cxt.fill();
+
+// Body
+
+cxt.beginPath();
+cxt.ellipse(100, 230, 90, 50, Math.PI / 4, 0, 2 * Math.PI);
+cxt.closePath();
+cxt.fillStyle = "#222830";
+cxt.fill();
+
+// Lanyards
+
+cxt.beginPath();
+cxt.ellipse(245, 290, 80, 25, Math.PI / 1.05, 0, 2 * Math.PI);
+cxt.closePath();
+cxt.fillStyle = "#f4841a";
+cxt.fill();
+
+// Shins
+
+cxt.beginPath();
+cxt.ellipse(370, 325, 60, 15, Math.PI / 0.8, 0, 2 * Math.PI);
+cxt.closePath();
+cxt.fillStyle = "#f4841a";
+cxt.fill();
+
+// Feet
+
+cxt.beginPath();
+cxt.ellipse(450, 360, 30, 10, Math.PI / 1.1, 0, 2 * Math.PI);
+cxt.closePath();
+cxt.fillStyle = "#ecbd8b";
+cxt.fill();
+
+// Chaise lounge or Just Chair main Stone
+
+cxt.beginPath();
+cxt.lineWidth = 10; 
+cxt.arc(120,410,100,0, Math.PI,true);
+cxt.closePath();
+cxt.strokeStyle = "#b0b5b5";
+cxt.stroke();
+
+
+</script>
+
+</body>
+</html>
