@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GEOM</title>
+	<meta charset="utf-8">
+	<style type="text/css"> 
+		body{
+			background-color: yellow;
+			color: blue;
+			font-size: 50px;
+		}
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+		let a= Math.floor(Math.random()*101)
+		let b= Math.floor(Math.random()*101)
+		let min,max;
+		if (a>b) {
+			min=b;
+			max=a
+		}else{
+			min=a;
+			max=b;
+		}
+
+	document.write("min"+min+"<br>")
+	document.write("max"+max+"<br>")
+	let sum=0;
+	for (var i = min; i < max; i++) {
+		sum=sum+i
+	}
+	document.write("сума чисел в діапазоні від "+min+"до"+max+"дорівнюе"+sum+"<br>")
+
+	</script>
+</body>
+</html>

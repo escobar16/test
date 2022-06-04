@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random</title>
+	<meta charset="utf-8">
+	<style type="text/css"> 
+		body{
+			background-color: yellow;
+			color: blue;
+			font-size: 50px;
+		}
+
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		let a= Math.floor(10+Math.random()*90)
+		let b= Math.floor(10+Math.random()*90)
+		let min,max
+
+			document.write("a="+a+"<br>")
+			document.write("b="+b+"<br>")
+			if (a>b) {
+				min=b
+				max=a
+				document.write("min="+min+"<br>")
+				document.write("max="+max+"<br>")
+		for (var i = 1; i <= 3; i++) {
+			document.write(min+Math.floor(Math.random()*(max-min))+" ")
+}
+			}else if (a<b) {
+				min=a
+				max=b
+				document.write("min="+min+"<br>")
+				document.write("max="+max+"<br>")
+				for (var i = 1; min <= max; i++) {
+			document.write(min+Math.floor(Math.random()*(max-min))+" ")
+}
+			}else{
+				document.write("a=b")
+			}
+			
+		
+
+	</script>
+
+</body>
+</html>
